@@ -17,5 +17,7 @@ def create_app():
     from app.rest import app_api as api_bp
     app.register_blueprint(api_bp)
 
+    from app import models
+
     return app
 
