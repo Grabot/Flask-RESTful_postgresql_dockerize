@@ -16,7 +16,7 @@ docker-compose build
 This will create the api docker container which and it will put the python flask code in it and install the requirements on the container.
 You can now run the container by using the command
 ```
-docker-compose run
+docker-compose up
 ```
 This will run the api container and it will start the postgres database container. 
 Now that the project is running and the database is running we want to add the tables in the database. This can be done by running the scripts in the migrations folder. Keep the docker containers running and run the following command
