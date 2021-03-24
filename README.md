@@ -19,7 +19,7 @@ You can now run the container by using the command
 docker-compose up
 ```
 This will run the api container and it will start the postgres database container. 
-Now that the project is running and the database is running we want to add the tables in the database. This can be done by running the scripts in the migrations folder. Keep the docker containers running and run the following command
+Now that the project is running and the database is running we want to add the tables in the database. This can be done by running the scripts in the migrations folder. Keep the docker containers running and run the following command in a new terminal
 ```
 python manage.py db upgrade
 ```
