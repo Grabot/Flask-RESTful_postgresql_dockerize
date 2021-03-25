@@ -1,5 +1,6 @@
 # Flask-RESTful_postgresql_dockerize
 A skeleton framework for creating a Flask REST API in docker with a postgresql database also in docker.
+
 ## What does it do?
 - You can add objects to the database
   - Go to http://localhost:5000/add/ᐸnameᐳ to add an object with the given name
@@ -7,18 +8,21 @@ A skeleton framework for creating a Flask REST API in docker with a postgresql d
   - Go to http://localhost:5000/all to view all the objects currently in the database
 ## That's it?
 Yes, but this should give a clear idea on how it works and how to expand it! 
+
 You can easily add more tables to the database and write new logic and endpoints to fit your own REST api needs.
 ## How to use it?
 clone or download the project and build it using docker using the command
 ```
 docker-compose build
 ```
-This will create the api docker container which and it will put the python flask code in it and install the requirements on the container.
-You can now run the container by using the command
+This will create the api docker container and it will put the python flask code in it and install the requirements on the container.
+
+You can now run the container by using the command.
 ```
 docker-compose up
 ```
 This will run the api container and it will start the postgres database container. 
+
 Now that the project is running and the database is running we want to add the tables in the database. This can be done by running the scripts in the migrations folder. Keep the docker containers running and start a new terminal. Make sure you have all the correct python packages installed for the project by runninng
 ```
 pip install -r requirements.txt
