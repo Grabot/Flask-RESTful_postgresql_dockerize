@@ -17,13 +17,13 @@ class Add(Resource):
             'object': place_holder.serialize
         }
 
-    def put(self):
+    def put(self, name):
         pass
 
-    def delete(self):
+    def delete(self, name):
         pass
 
-    def post(self):
+    def post(self, name):
         pass
 
 
